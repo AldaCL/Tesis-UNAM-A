@@ -22,6 +22,8 @@
 % writing thesis content.
 \include{Latex/Macros/MacroFile1}           % Archivo con funciones útiles
 
+%Personal includes
+\usepackage{pdfpages}
 
 
 
@@ -32,7 +34,7 @@
 \title{Título de la tesis}
 \author{Nombre Apellido1 Apellido 2} 
 \facultad{Facultad de Ciencias Médicas y Biológicas \break``Dr. Ignacio Chávez"}                 % Nombre de la facultad/escuela
-\escudofacultad{Latex/Classes/Escudos/fmed_grande} % Aquí ponen la ruta y nombre del escudo de su facultad, actualmente, la carpeta Latex/Classes/Escudos cuenta con los siguientes escudos:
+\escudofacultad{Latex/Classes/Escudos/fi_azul} % Aquí ponen la ruta y nombre del escudo de su facultad, actualmente, la carpeta Latex/Classes/Escudos cuenta con los siguientes escudos:
 % "fi_azul" Facultad de ingenieria en color azul
 % "fi_negro" Facultad de ingenieria en color negro
 % "fc_azul" Facultad de ciencias en color azul
@@ -45,9 +47,10 @@
 \degreedate{2017}                                     % Año de la fecha del examen
 \lugar{Morelia, Michoacán}                        % Lugar
 
-%\portadafalse                              % Portada en NEGRO, descomentar y comentar la línea siguiente si se quiere utilizar
-\portadatrue                                % Portada en COLOR
+\portadafalse                              % Portada en NEGRO, descomentar y comentar la línea siguiente si se quiere utilizar
+%\portadatrue                                % Portada en COLOR
 
+%\includepdf[pages=1]{portada_tesis.pdf}
 
 
 %% Opciones del posgrado (descomentar si las necesitan)
@@ -73,16 +76,18 @@
 %                   PORTADA                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
-\maketitle									% Se redefinió este comando en el archivo de la clase para generar automáticamente la portada a partir de los datos
-
+\begin{titlepage}
+	\includepdf{portada_tesis.pdf}
+\end{titlepage}
+%\maketitle	 % Se redefinió este comando en el archivo de la clase para generar automáticamente la portada a partir de los datos
+%\includepdf[pages=-,pagecommand={},width=\textwidth]{portada_tesis.pdf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                  PRÓLOGO                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frontmatter
 \include{Agradecimientos/Dedicatoria}       % Comentar línea si no se usa
 \include{Agradecimientos/Agradecimientos}   % Comentar línea si no se usa 
-\include{Declaracion/Declaracion}           % Comentar línea si no se usa
+%\include{Declaracion/Declaracion}           % Comentar línea si no se usa
 \include{Resumen/Resumen}                   % Comentar línea si no se usa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

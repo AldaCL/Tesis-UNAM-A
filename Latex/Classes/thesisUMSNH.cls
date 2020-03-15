@@ -333,6 +333,46 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %            PORTADA de la UMSNH                                                             %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \renewcommand{\maketitle}{
+% 	\begin{alwayssingle}
+% 		\begin{center}
+% 			\includepdf[pages=-,pagecommand={},width=\textwidth]{portada_tesis.pdf}
+% 			\thispagestyle{empty}
+% 		\end{center}
+% 	\end{alwayssingle}
+% }
+% 	\newpage
+% 	\thispagestyle{empty}~
+	
+		
+% 	\newpage
+% 	\begin{alwayssingle}
+% 	\thispagestyle{empty}
+% 	\vspace{30mm}
+
+% 	\noindent JURADO ASIGNADO:
+% 	\vspace{8mm}
+
+% 	\begin{tabbing}
+% 	Presidente: \ \ \ \ \ \ \ \= {\@presidente}\\ [3mm]
+% 	Secretario: \> {\@secretario}\\ [3mm]
+% 	Vocal: \> {\@vocal}\\ [3mm]
+% 	1er. Suplente: \> {\@supuno}\\ [3mm]
+% 	2o. Suplente: \> {\@supdos}\\ [12mm]
+% 	\end{tabbing}
+% 	La tesis se realizó en {\@institucion}.
+% 	\vspace{15mm}
+
+% 	\begin{center}
+% 	TUTOR DE TESIS:\\[4mm]
+% 	{\@director}\\[20mm]
+% 	---------------------------------------------------------\\
+% 	\end{center}
+% 	%\newpage
+% 	\vfill
+% 	\end{alwayssingle}
+
+\usepackage{helvet}
 
 \renewcommand{\maketitle}{%
 \ifposgrado
@@ -410,11 +450,11 @@
 	        \colorvrule{Oro}{1pt}{13cm}\\[10pt]
 	        \includegraphics[height=2.6cm]{\@escudofacultad}
 	    \else
-	        \includegraphics[height=2.6cm]{Latex/Classes/Escudos/umsnh-blanco-negro}\\[10pt]
+	        \includegraphics[height=2.6cm]{Latex/Classes/Escudos/unam_negro}\\[10pt]
 	        \hskip2pt\vrule width2.5pt height13cm
     	    \hskip1mm
 	        \vrule width1pt height13cm\\[10pt]
-	        \includegraphics[height=2.6cm]{Latex/Classes/Escudos/unam_negro_5x5cm}
+	        \includegraphics[height=2.6cm]{Latex/Classes/Escudos/fi_negro}
 	    \fi
     
 	  \end{center}
