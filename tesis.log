@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  15 MAR 2020 02:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.26)  16 MAR 2020 22:05
 entering extended mode
 **d:/Tesina/Tesis-UNAM-A/tesis.tex
 (d:/Tesina/Tesis-UNAM-A/tesis.tex
@@ -596,7 +596,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 
 pdfTeX warning: pdflatex.exe (file d:/Tesina/Tesis-UNAM-A/portada_tesis.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<portada_tesis.pdf, id=91, 614.295pt x 794.97pt>
+<portada_tesis.pdf, id=87, 614.295pt x 794.97pt>
 File: portada_tesis.pdf Graphic file (type pdf)
 <use portada_tesis.pdf>
 Package pdftex.def Info: portada_tesis.pdf  used on input line 80.
@@ -614,7 +614,7 @@ pdfTeX warning: pdflatex.exe (file d:/Tesina/Tesis-UNAM-A/portada_tesis.pdf): PD
 
 
 pdfTeX warning: pdflatex.exe (file d:/Tesina/Tesis-UNAM-A/portada_tesis.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<portada_tesis.pdf, id=94, page=1, 614.295pt x 794.97pt>
+<portada_tesis.pdf, id=90, page=1, 614.295pt x 794.97pt>
 File: portada_tesis.pdf Graphic file (type pdf)
 <use portada_tesis.pdf, page 1>
 Package pdftex.def Info: portada_tesis.pdf , page1 used on input line 80.
@@ -650,7 +650,7 @@ Package pdftex.def Info: portada_tesis.pdf , page1 used on input line 80.
  (d:/Tesina\Tesis-UNAM-A\Agradecimientos/Dedicatoria.texpdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.6 \end{dedication}
+l.4 \end{dedication}
                      [1
 
 {C:/Users/alda-/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
@@ -664,9 +664,14 @@ l.4 \begin{acknowledgements}
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
 
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 8.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
 
 [3
 
@@ -740,15 +745,11 @@ LaTeX Info: Redefining \% on input line 1.
 Cap\'{\i }tulo 1.
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 26.
+(blindtext)                 on input line 37.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 34.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 41.
+(blindtext)                 on input line 44.
 
 [1
 
@@ -756,18 +757,18 @@ Package blindtext Warning: spanish not defined, using English instead.
 ]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 47.
+(blindtext)                 on input line 50.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 54.
+(blindtext)                 on input line 57.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 62.
+(blindtext)                 on input line 65.
 
-LaTeX Info: Redefining \. on input line 62.
-LaTeX Info: Redefining \% on input line 62.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
 [2])
 LaTeX Info: Redefining \. on input line 111.
 LaTeX Info: Redefining \% on input line 111.
@@ -800,7 +801,7 @@ Package blindtext Warning: spanish not defined, using English instead.
 
 ]
 Cap\'{\i }tulo 3.
-<Capitulo3/figs/planta.jpg, id=255, 301.125pt x 301.125pt>
+<Capitulo3/figs/planta.jpg, id=250, 301.125pt x 301.125pt>
 File: Capitulo3/figs/planta.jpg Graphic file (type jpg)
 <use Capitulo3/figs/planta.jpg>
 Package pdftex.def Info: Capitulo3/figs/planta.jpg  used on input line 36.
@@ -918,7 +919,7 @@ LaTeX Info: Redefining \% on input line 22.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
 Package rerunfilecheck Info: File `tesis.out' has not changed.
-(rerunfilecheck)             Checksum: 773C660633A503BFCC8BCE7CA6C3FEB4;1381.
+(rerunfilecheck)             Checksum: 0AED0699ADA95F050CF3254FFDFEF8D5;1316.
 Package rerunfilecheck Info: File `tesis.brf' has not changed.
 (rerunfilecheck)             Checksum: A38025BF3898FF3419AE73F249920811;116.
 
@@ -928,17 +929,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 12842 strings out of 481556
- 196270 string characters out of 2913869
- 487678 words of memory out of 3000000
- 27655 multiletter control sequences out of 15000+200000
+ 12840 strings out of 481556
+ 196246 string characters out of 2913869
+ 487677 words of memory out of 3000000
+ 27654 multiletter control sequences out of 15000+200000
  541254 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,49p,519b,1276s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,18n,49p,536b,1276s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\alda-\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/alda-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on d:/Tesina\Tesis-UNAM-A\tesis.pdf (31 pages, 297877 bytes).
+Output written on d:/Tesina\Tesis-UNAM-A\tesis.pdf (31 pages, 295343 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
