@@ -8,8 +8,33 @@
 
 \chapter{Introducción}
 
-Los sistemas de comunicación ópticos representan en la actualidad una de las tecnologías más empleadas en el sector de las telecomunicaciones, dada su eficiencia, velocidad y demás ventajas provistas por éste desarrollo. Desde una visión esencialista, un sistema de comunicación óptico se compone por un transmisor, un medio de transmisión (Principalmente fibra óptica) y un receptor.
-La adecuación de señales eléctricas al medio óptico es en términos generales, la principal tarea ejecutada por un transmisor siguiendo el paradigma actual; además, éste principio no limita sus aplicaciones a un sistema de telecomunicaciones, sino también a sistemas de medición, reflectómetros y métodos de monitoreo y sensado.
+Los sistemas de comunicación óptica son una de las tecnologías más empleadas el sector de las telecomunicaciones en la actualidad; su desarrollo revolucionó la forma en que se transmite la información, mejorando de forma significativa la capacidad de canal, las velocidades de transmisión, las distancias alcanzadas así como la distancia entre dispositivos repetidores, parámetros que hasta 1970 se encontraban límitados por los principios de operación de los sistemas de microondas \citep{Agrawal2012}.
+
+El uso de señales ópticas como portadoras en los sistemas de comunicación requiere de una fuente óptica coherente, un dispositivo detector y de un medio de transmisión adecuado; la invención del láser (por las siglas de \textit{Light amplification by stimulated  emission of radiation}) en 1960 \citep{Rawicz2008}, la investigación y desarrollo de fibras ópticas con perdidas menores a los 2 \si{\deci\belmilliwatt} en 1970 y de detectores de alta calidad en 1980 \citep{Tomasi2003} solventaron éstas necesidades dando paso al despliegue de sistemas de comunicación óptica confiables, de alta capacidad y económicamente viables. Estos sistemas fueron adoptados rápidamente, pues sus características permitieron abastecer la creciente demanda de servicios de comunicación y transferencia de información a través de las redes (Video, voz, comercio electrónico, educación a distancia, etc.), que en las décadas siguientes incrementarón no solo en calidad sino también en el ancho de banda necesario para su transmisión\citep{keiser3}.
+
+La rápida adopción de los sistemas de comunicación óptica guiados por fibra óptica se debió también a sus notorias ventajas sobre los sistemas de comunicación tradicionales\footnote{Sistemas de comunicación que usan medios guíados convencionales de cable metálico \citep{Tomasi2003}}, entre las que encontramos expuestas por \citeauthor*{Tomasi2003} en \citep{Tomasi2003}: 
+
+\begin{enumerate}
+    \item Mayor capacidad de información: 
+        Los cables metálicos generan capacitancia entre, e inductancia a lo largo, de sus conductores que los hacen funcionar como filtros pasabajas; eso limita sus frecuencias de transmisión y anchos de banda. Por otra parte, los sistemas de comunicación óptica tienen mayor capacidad de información debido a los anchos de banda inherentemente mayores a las frecuencias ópticas. 
+    
+    \item Inmunidad a la diafonía \footnote{La diafonía es el fenómeno que se presenta cuando se acoplan líneas conductoras paralelas y genera capacitancias parásitas que se manifiestan como interferencias en la comunicación.} e interferencia por estática: 
+        Las fibras ópticas de vidrio o de plástico no son medios conductores de electricidad, por lo tanto no generan inducción magnética entre cables vecinos, haciéndolos medios inmunes a la diafonía \citep{nerivela}, por lo que además resultan inmunes a la interferencia electromagnética debida a rayos y otros dispositivos fuentes de ruido eléctrico. Por otra parte, las F.O. tampoco irradian energía de RF por lo que no representan fuentes de interferencia para otros sistemas de comunicaciones. 
+
+    \item Durabilidad y seguridad: 
+        Por la naturaleza del material de las F.O. , son mas resistentes ante ambientes adversos y cambios de temperatura; además de ser notablemente más ligeras que el cable metálico, pueden ser empleadas cerca de sustancias inflamables. Respecto a la seguridad e integridad de la información que viaja a través de la fibra, es virtualmente imposible intervenir una fibra óptica sin que el usuario o administrador lo sepa.
+    
+\end{enumerate}
+
+Éstas características han permitido una notable penetración de los sistemas de comunicación óptica en todos los niveles estructurales de la redes de telecomunicaciones, desde los enlaces transoceanicos de gran capacidad hasta la implementación de FTTH como una tendencia cada vez mas adoptada.
+
+Dada la gran cantidad de operaciones cotidianas en las que se involucran las tecnologías de comunicación óptica, resulta de vital importancia promover el desarrollo e investigación de metodologías novedosas que mejoren el desempeño de los dispositivos que constituyen a dichos sistemas; no solo aumento en la capacidad de transmisión, sino también en los métodos de monitoreo, resiliencia y adaptabilidad.
+
+
+% pues resultan claras sus ventajas sobre las líneas de transmisión convencionales (Par de cobre, coaxial). Dada su continua aceptación y \cite{Shi2016} 
+
+% dada su eficiencia, velocidad y demás ventajas provistas por éste desarrollo. Desde una visión esencialista, un sistema de comunicación óptico se compone por un transmisor, un medio de transmisión (Principalmente fibra óptica) y un receptor.
+% La adecuación de señales eléctricas al medio óptico es en términos generales, la principal tarea ejecutada por un transmisor siguiendo el paradigma actual; además, éste principio no limita sus aplicaciones a un sistema de telecomunicaciones, sino también a sistemas de medición, reflectómetros y métodos de monitoreo y sensado.
     
 %: ----------------------- HELP: latex document organisation
 % the commands below help you to subdivide and organise your thesis
@@ -26,11 +51,23 @@ La adecuación de señales eléctricas al medio óptico es en términos generale
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                           Objetivo                                    %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Definición del problema}
+
+Las redes ópticas de telecomunicaciones emplean níveles ópticos en su operación y uno de los elementos más importantes involucrados en su desempeño es el sistema transmisor láser; sin embargo, estudiar su comportamiento y arquitectura de forma experimental en los laboratorios de la Facultad de Ingeniería puede resultar prohibitivo dado el precio y complejidad de los dispositivos involucrados.
+
+Una aproximación que permita manipular, editar y  actualizar la configuración de un sistema transmisor láser, tanto en el hardware como en el software, permitiría a los alumnos involucrarse de forma activa en su estudio y experimentación, así como habilitarlos para operar sistemas más complejos en el futuro.
+
+\section{Hipótesis}
+
+Es posible realizar la implementación de un transmisor láser pulsado desde la generación de pulsos, hasta su adecuación al medio óptico que pueda ser analizado de forma modular.
 
 \section{Objetivo}
 
-Este trabajo tiene por objetivo ...
-\blindtext
+Implementar un transmisor láser pulsado  que siente un antecedente académico en la Facultad de Ingeniería.
+
+
+
+ \blindtext
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                           Motivación y estado del arte                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
