@@ -1,6 +1,14 @@
 
 % this file is called up by thesis.tex
 % content in this file will be fed into the main document
+
+%: ----------------------- HELP: latex document organisation
+% the commands below help you to subdivide and organise your thesis
+%    \chapter{}       = level 1, top level
+%    \section{}       = level 2
+%    \subsection{}    = level 3
+%    \subsubsection{} = level 4
+
 %----------------------- introduction file header -----------------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  Capítulo 1: Introducción- DEFINIR OBJETIVOS DE LA TESIS              %
@@ -36,71 +44,56 @@ Dada la gran cantidad de operaciones cotidianas en las que se involucran las tec
 % dada su eficiencia, velocidad y demás ventajas provistas por éste desarrollo. Desde una visión esencialista, un sistema de comunicación óptico se compone por un transmisor, un medio de transmisión (Principalmente fibra óptica) y un receptor.
 % La adecuación de señales eléctricas al medio óptico es en términos generales, la principal tarea ejecutada por un transmisor siguiendo el paradigma actual; además, éste principio no limita sus aplicaciones a un sistema de telecomunicaciones, sino también a sistemas de medición, reflectómetros y métodos de monitoreo y sensado.
     
-%: ----------------------- HELP: latex document organisation
-% the commands below help you to subdivide and organise your thesis
-%    \chapter{}       = level 1, top level
-%    \section{}       = level 2
-%    \subsection{}    = level 3
-%    \subsubsection{} = level 4
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                           Presentación                                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\section{Presentación} % section headings are printed smaller than chapter names
 %\blindtext
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                           Objetivo                                    %
+%                   Definición del problema                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Definición del problema}
 
-Las redes ópticas de telecomunicaciones emplean níveles ópticos en su operación y uno de los elementos más importantes involucrados en su desempeño es el sistema transmisor láser; sin embargo, estudiar su comportamiento y arquitectura de forma experimental en los laboratorios de la Facultad de Ingeniería puede resultar prohibitivo dado el precio y complejidad de los dispositivos involucrados.
+Las redes ópticas de telecomunicaciones emplean níveles ópticos en su operación y uno de los elementos más importantes involucrados en su desempeño es el sistema transmisor láser; sin embargo, estudiar su funcionamiento y arquitectura de forma experimental en los laboratorios de la Facultad de Ingeniería puede resultar prohibitivo dado el precio y complejidad de los dispositivos involucrados.
 
 Una aproximación que permita manipular, editar y  actualizar la configuración de un sistema transmisor láser, tanto en el hardware como en el software, permitiría a los alumnos involucrarse de forma activa en su estudio y experimentación, así como habilitarlos para operar sistemas más complejos en el futuro.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Hipótesis                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Hipótesis}
 
-Es posible realizar la implementación de un transmisor láser pulsado desde la generación de pulsos, hasta su adecuación al medio óptico que pueda ser analizado de forma modular.
+Es posible realizar la implementación de un transmisor láser pulsado desde la generación de pulsos con un microcontrolador, hasta su adecuación al medio óptico que pueda ser analizado de forma modular por los lectores del presente trabajo.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                           Objetivo                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Objetivo}
 
-Implementar un transmisor láser pulsado  que siente un antecedente académico en la Facultad de Ingeniería.
+Diseñar e implementar un transmisor láser pulsado que siente un antecedente académico en la Facultad de Ingeniería.
 
-
-
- \blindtext
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                           Motivación y estado del arte                %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Motivación}
+\section{Motivación y contribuciones}
 
+Durante el estudio de los sistema de comunicaciones ópticas, resulta frecuente la aproximación exclusivamente analítica de los principios y dispositivos involucrados, mientras que la aproximación experimental se límita a la observación de los dispositivos en operación, la experimentación sobre configuraciones existentes y que a diferencia del estudio en sistemas electrónicos, dónde los componentes son reemplazables y configurables, la manipulación directa de los dispositivos láser y la arquitectura interna de los transmisores es más bien límitada. 
 
-\blindtext
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                   Planteamiento del problema                          %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+En la ésta tésis se presenta una propuesta de análisis, diseño e implementación de un sistema transmisor láser, de forma que resulte ilustrativa y representativa para explicar los elementos fundamentales de su operación. El diseño comprende un microcontrolador de la familia STM32 con arquitectura Arm, un sistema de control de corriente (Driver de corriente) basado en el amplificador operacional OPA 350 y un diodo láser comercial de 1550 nm.
 
-\section{Planteamiento del problema}
-\blindtext
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                           Metodología                                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Metodología}
-
-Se tiene un objetivo principal, y para llegar a \'el %otra forma de poenr acentos
-\blindtext
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                         Contribuciones                                %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Contribuciones}
-
-La principal contribución de este trabajo es 
-\blindtext
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                           Estructura de la tesis                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Estructura de la tesis}
 
-Este trabajo está dividido en XX capítulos. Al principio se encuentra 
-Finalmente se encuentra la parte de 
+Este trabajo está dividido en XX capítulos. En primera instancia se describen los principios teóricos que sustentan el desarrollo de cada elemento que compone al sistema transmisor, comenzando con los fundamentos de la arquitectura del microcontrolador para generar pulsos de corta duración, el método de operación del amplificador operacional como una fuente de corriente controlada y finalmente la naturaleza optoelectrónica del diodo láser. 
+A continuación, en el capítulo 3, se describe de forma detallada el diseño y análisis llevado a cabo para conseguir el transmisor de pulsos con el desempeño deseado, así como las simulaciones requeridas y la estructura del código que ejecuta el microcontrolador. 
+
+El capítulo 4 Resultados expone el desempeño logrado con el dispositivo implementado, las mediciones y la comparación con las estimaciones conseguidas mediante la simulación y la teoría previa. 
+
+Finalmente, en el capítulo 5 revisamos las conclusiones a las que se llegarón tras el análisis de los resultados con la hipótesis inicial, además de hacer observaciones sobre las proyecciones del proyecto como un trabajo en continuo desarrollo, con aplicaciones en ejercicios que involucran transmisores láseres de pulsos.
