@@ -5,8 +5,20 @@
 
 \chapter{Diseño e implementación}
 
-En el presente capítulo se retoman los conceptos desarrollados en el capítulo anterior para describir el diseño e implementación del sistema transmisor láser empleando la tarjeta ede desarrollo STM32F446RE como generador de pulsos ópticos e interfaz de usuario, el amplificador operacional OPA350 cómo elemento principal del driver de corriente basado el diseño de la fuente de corriente Howland y finalmente se expone la operación y funcionamiento del diodo láser de 1550 nm como una fuente de pulsos ópticos modulados. 
+En el presente capítulo se retoman los conceptos desarrollados en el capítulo anterior para describir el diseño e implementación del sistema transmisor láser que utiliza la tarjeta de desarrollo STM32F446RE como generador de pulsos e interfaz de usuario, el amplificador operacional OPA350 cómo elemento principal del driver de corriente basado en el diseño de la fuente de corriente Howland y finalmente se expone la operación y funcionamiento del diodo láser de 1550 nm como una fuente de pulsos ópticos modulados.El diagrama del sistema antes mencionado es ilustrado en la Figura \ref{Diagrama_tx} y es descrito a detalle en las secciones siguientes. 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm]{Figures/diagrama_1_pieces.png}
+    \caption{Diagrama del sistema transmisor láser pulsado}
+    \label{Diagrama_tx}
+\end{figure}
+
+\section{Tarjeta de desarrollo STM32}
+
+La tarjeta de desarrollo STM32F446RE (STM32 Nucleo-64) pertenece a una familia de tarjetas de desarrollo con diferentes configuraciones y prestaciones; contienen embebido un microcontrolador STM32 con un empaquetado LQFP64\footnote{Siglas en ingles de Low-profile Quad Flat Package 64 Terminals (\textit{Encapsulado Cuadrado Plano de Perfil Bajo de 64 terminales})} 
+
+El microcontrolador STM32 embebido en la tarjeta de desarrollo STM32F446RE tiene un núcleo Arm\footnote{Anteriormente ARM por las siglas en inglés de Advanced RISC MAchine y actualmente Arm por Acorn RISC Machine} Cortex-M4 basado en la  arquitectura RISC (Reduced Instruction Set Computer) de 32 bits y una Unidad de Punto Flotante(FPU por las siglas en inglés de \textit{Floating-Point Unit}). 
 
 
 

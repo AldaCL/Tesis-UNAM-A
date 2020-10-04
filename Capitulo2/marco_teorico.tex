@@ -11,11 +11,44 @@ De forma inicial se describen los elementos constitutivos de un sistema de comun
 %%%%%%%%%%%%%%%%        Subchapter 1     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Sistemas de comunicación óptica}
 
-Un sistema de comunicación óptica, como el caso partícular de uns sistema de comunicación 
+El esquema de un sistema de comunicaciones ópticas más elemental, contempla un transmisor óptico, una línea de transmisión, generalmente se trata de un cable de fibra óptica y un receptor cuyo dispositivo elemental en un foto receptor.
+
+La tarea del transmisor dentro de un sistema de comunicación óptica, es la de generar la señal óptica, montar información en dicha señal y enviar la señal modulada dentro de la fibra óptica. En los transmisores empleados hoy en día, se utilizan generalmente fuentes ópticas basadas en semiconductores.
+
+La aproximación propuesta para estudiar uel transmisor óptico comprende ...
+
+
 
 
 %%%%%%%%%%%%%%%%        Subchapter 2     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Familia de microcontroladores STM32}
+\section{Tarjeta de desarrollo STM32F446RE}
+La tarjeta de desarrollo STM32F446RE (STM32 Nucleo-64) pertenece a una familia de tarjetas de desarrollo con diferentes configuraciones y prestaciones; contienen embebido un microcontrolador STM32 con un empaquetado LQFP64\footnote{Siglas en ingles de Low-profile Quad Flat Package 64 Terminals (\textit{Encapsulado Cuadrado Plano de Perfil Bajo de 64 terminales})} 
+
+El microcontrolador STM32 embebido en la tarjeta de desarrollo STM32F446RE tiene un núcleo Arm\footnote{Anteriormente ARM por las siglas en inglés de Advanced RISC MAchine y actualmente Arm por Acorn RISC Machine} Cortex-M4 basado en la  arquitectura RISC (Reduced Instruction Set Computer) de 32 bits y una Unidad de Punto Flotante(FPU por las siglas en inglés de \textit{Floating-Point Unit}) \citep*{STMicroelectronics2020}. Ésta arquitectura proveé a los microcontroladores y procesadores que la implementan de una gran eficiencia en la ejecución del código, lo cual se ve reflejado en un alto rendimiento computacional con un bajo costo de energía.
+
+
+Los principios de diseño más importantes de la arquitectura computacional RISC son:
+
+\begin{itemize}
+    \item \textbf{Uso de operaciones simples}
+    \item \textbf{Uso de operaciones registro a registro}
+    \item \textbf{Modos de direccionamiento simples}
+    \item \textbf{Gran número de registros}
+    \item \textbf{Formato de instrucciones simples de longitud fija}
+\end{itemize}
+
+Dicha arquitectura es generalmente contrastada y comparada con su antecesor, la arquitectura CISC(Complex Instruction Set Computing), que, cómo su nombre lo indica utiliza instrucciones complejas en lugar de instrucciones simples; esa característica privilegia la ejecución de instrucciones complejas descritas en pequeñas líneas de código, además de permitir que la administración de los accesos a memoria sean versátiles sin embargo, también aumenta de forma considerable el número de instrucciones y ciclos de reloj mediante el cual se realizan las operaciones, aumentando la complejidad del hardware y la paralelización de tareas simples.
+
+Si bien, la arquitectura Arm esta basada en los principios de RISC, lo cierto es que también implementa algunas características de CISC, como el uso de instrucciones complejas para realizar ciertas operaciones, con el objetivo de "facilitar" la ejecución de tareas frecuentes
+
+
+La arquitectura Arm se comercializa bajo el esquema de licencias, es decir, ARM Holdings, la empresa propietaría de la autoría intelectual, licencia el uso de los métodos de diseño, el conjunto de instrucciones y herramientas de desarrollo a las empresas para manufacturar sus chips. En éste sentido, y en armonía con las ventajas y características antes mencionadas, la arquitectura Arm no solo es utilizada en microcontroladores en tarjetas de desarrollo, sino que ésta es solo una ventana en la cual es posible desarrollar y experimentar, puesto que al día de hoy, la arquitectura Arm es utilizada en los chips de un gigantesco número de dispositivos que incluyen teléfonos celulares, electrodomésticos, vehículos y computadoras personales que actualmente dominan el mercado\cite{armpage}. Dentro de las principales empresas que desarrollan productos que implementar Arm se encuentran:
+Atmel, Broadcom, Microsoft, Nintendo, Nokia, Sony, Qualcomm, Samsung, Yamaha,Nvidia, Texas Instruments y la propia STMicroelectronics, que desarrolla la tarjeta  descrita en éste subcapítulo.
+
+Además de anunciar dentro de su catálogo de productos, diseños y plataformas enfocadas a seguir tendencias del desarrollo tecnológico, como aplicaciones de IoT e Inteligencia Artificial. 
+
+
+
 
 
 %%%%%%%%%%%%%%%%        Subchapter 3     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
